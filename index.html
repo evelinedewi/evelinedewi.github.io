@@ -11,31 +11,37 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Lora|Playfair+Display|Quicksand" rel="stylesheet">
+
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
         <!-- Add your site content here. Keep it pretty and use indentation :) -->
-        <header>
-            <a href="http://placehold.it"><img src="http://placehold.it/85x85" alt="CompanyLogo"></a>
-            <h1>Company Name</h1>
-        </header>
-
+        
         <div class="homepage-img">
             <img src="img/landingpic.jpg">
-
-            <nav>
-                <ul>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#services">Service</a></li>
-                    <li><a href="index.html#projects">Projects</a></li>
-                    <li><a href="index.html#values">Values</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="header-wrap">
+                <header>
+                    <div class="company-logo">
+                        <a href="http://placehold.it"><img src="http://placehold.it/85x85" alt="CompanyLogo"></a>
+                    </div>
+                    <div class="company-name">
+                        <h1>Company Name</h1>
+                    </div>
+                </header>     
+        
+                <nav>        
+                    <div class="nav-link"><a href="index.html#about">About</a></div>
+                    <div class="nav-link"><a href="index.html#service">Service</a></div>
+                    <div class="nav-link"><a href="index.html#projects">Projects</a></div>
+                    <div class="nav-link"><a href="index.html#values">Values</a></div>
+                    <div class="nav-link"><a href="index.html#contact">Contact</a></div>
+                </nav>
+                
+            </div>     
         </div>
-        
-        
+
         <article class="about-container" id="about">
             <div class="about-wrap">
                 <h2>About</h2>
@@ -73,8 +79,6 @@
         </section>
 
         <article class="service-container" id="service">
-            <h2>Service</h2>
-
             <div class="service-wrap">
                 <a href="http://placehold.it"><img src="http://placehold.it/80x80"></a>
                 <h3>Service 1</h3>
@@ -122,11 +126,8 @@
             </div>
         </article>
 
-        <article id="contact">
+        <footer id="contact">
             <h2>Contact</h2>
-        </article>
-
-        <footer>
         </footer>
 
         <script src="js/vendor/jquery-1.12.0.min.js"></script>
