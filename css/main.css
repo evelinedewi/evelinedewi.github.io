@@ -1,0 +1,83 @@
+
+/* ==========================================================================
+   Base styles:
+   ========================================================================== */
+/* Fix to include padding and border in the total width for each element */
+* {
+  box-sizing: border-box;
+}
+
+/* Fix for responsive images */
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ffffff;
+}
+
+h1, h2, h3 {
+  font-family: ;
+}
+
+header {
+  text-align: center;
+}
+
+.homepage-img {
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  border: 0 0 0.5px 0 solid lightslategrey;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0 80px 5px 80px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-wrap {
+  width: 45%;
+}
+
+#statistics {
+  background-color: #050e26;
+  color: #ffffff;
+  text-align: center;
+}
+
+section li {
+  display: inline-block;
+  margin: 40px;
+  padding: 20px;
+  text-decoration: none;
+  color: #888;
+}
+
+.service-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service-wrap {
+  width: 38%;
+  text-align: center;
+}
+
