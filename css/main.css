@@ -36,34 +36,42 @@ h3 {
   position: relative;
 }
 
-/* border is not showing */
-.header-wrap {
-  border: 0 0 2px 0 solid red;
-}
-
 header {
   top: 0;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   position: absolute;
+  z-index: 30;
 }
 
-/* flex not working */
+.company-logo {
+  width: 10%;
+}
+
+.company-name {
+  width: 30%;
+}
+
 nav {
   top: 0;
-  position: absolute;
   text-transform: uppercase;
   display: flex;
-  justify-content: flex-end;
+  width: 60%;
 }
 
 .nav-link {
   padding: 10px 20px;
-  width: 70%;
+  width: 20%;
 }
 
 nav a {
   text-decoration: none;
+}
+
+nav li {
+  display: inline-block;
+  text-align: right;
 }
 
 nav a:link {
@@ -100,10 +108,12 @@ nav a:active {
 
 section li {
   display: inline-block;
-  margin: 40px;
+  margin: 30px;
   padding: 20px;
   text-decoration: none;
-  color: #888;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Lora', serif;
 }
 
 .service-container {
@@ -117,3 +127,25 @@ section li {
   text-align: center;
 }
 
+#values {
+  padding: 20px;
+  text-align: center;
+  
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-wrap {
+  width: 30%;
+  text-align: center;
+}
+
+footer li {
+  text-decoration: none;
+}
