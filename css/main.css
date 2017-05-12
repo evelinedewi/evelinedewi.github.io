@@ -95,6 +95,7 @@ nav {
 
 nav a {
   text-decoration: none;
+
 }
 
 nav a:link {
@@ -106,7 +107,9 @@ nav a:visited {
 }
 
 nav a:hover {
-  color: #D1102D;
+  color: #0D3299;
+  transition: all 0.5s ease-in-out;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 nav a:active {
