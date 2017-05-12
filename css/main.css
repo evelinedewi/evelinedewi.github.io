@@ -49,8 +49,9 @@ body {
 
 .homepage h2 {
   position: absolute;
-  top: 450px;
-  left: 450px;
+  top: 70%;
+  left: 40%;
+  right: 0;
   font-size: 42px;
   color: #fff;
   background: rgba(0, 0, 0, 0.7);
@@ -83,6 +84,7 @@ header {
 
 nav {
   top: 0;
+  right: 0;
   text-transform: uppercase;
   display: flex;
   width: 65%;
@@ -95,7 +97,6 @@ nav {
 
 nav a {
   text-decoration: none;
-
 }
 
 nav a:link {
