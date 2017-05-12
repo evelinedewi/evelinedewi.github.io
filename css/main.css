@@ -1,13 +1,9 @@
-
-/* ==========================================================================
-   Base styles:
-   ========================================================================== */
-/* Fix to include padding and border in the total width for each element */
+/* fix to include padding and border in the total width for each element */
 * {
   box-sizing: border-box;
 }
 
-/* Fix for responsive images */
+/* fix for responsive images */
 img {
   max-width: 100%;
 }
@@ -16,7 +12,15 @@ html {
   height: 100%;
 }
 
-/*-----FONTS-----*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #ffffff;
+  height: 100%;
+}
+
+/* fonts */
 h1 {
   font-family: 'Playfair Display', serif;
   color: #fff;
@@ -29,15 +33,7 @@ h2 {
 h3 {
   font-family: 'Crimson Text', serif;
 }
-/*---------------*/
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Quicksand', sans-serif;
-  background-color: #ffffff;
-  height: 100%;
-}
+/*--------------------------------------------------*/
 
 .homepage {
   background-image: url("../img/background-img.jpg");
@@ -62,8 +58,12 @@ body {
 header {
   top: 0;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   position: absolute;
   z-index: 30;
 }
@@ -74,7 +74,9 @@ header {
 }
 
 .company-logo img {
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .company-name {
@@ -86,6 +88,8 @@ nav {
   top: 0;
   right: 0;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 65%;
   padding-top: 13px;
@@ -95,11 +99,11 @@ nav {
   padding: 38px 30px 0 30px;
 }
 
-nav a {
+a {
   text-decoration: none;
 }
 
-nav a:link {
+a:link {
   color: #ffffff;
 }
 
@@ -107,19 +111,31 @@ nav a:visited {
   color: #e5e5e5;
 }
 
+footer a:visited {
+  color: #888
+}
+
 nav a:hover {
   color: #0D3299;
+  -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   background: rgba(0, 0, 0, 0.7);
 }
 
-nav a:active {
+footer a:hover {
+  color: #910F23;
+}
+
+a:active {
   color: #D7D2C3;
 }
 
 .about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .about-container h3 {
@@ -152,9 +168,13 @@ section li {
 }
 
 .service-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-top: 20px;
 }
 
@@ -185,9 +205,14 @@ section li {
 footer {
   background-color: #000;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer-wrap {
@@ -200,26 +225,6 @@ footer ul {
   margin-bottom: 5em;
   padding: 0;
   list-style-type: none;
-}
-
-footer a {
-  text-decoration: none;
-}
-
-footer a:link {
-  color: #ffffff;
-}
-
-footer a:visited {
-  color: #888
-}
-
-footer a:hover {
-  color: #910F23;
-}
-
-footer a:active {
-  color: #D7D2C3;
 }
 
 #copyright {
