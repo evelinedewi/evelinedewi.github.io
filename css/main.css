@@ -12,13 +12,11 @@ img {
   max-width: 100%;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Quicksand', sans-serif;
-  background-color: #ffffff;
+html {
+  height: 100%;
 }
 
+/*-----FONTS-----*/
 h1 {
   font-family: 'Playfair Display', serif;
   color: #fff;
@@ -31,9 +29,33 @@ h2 {
 h3 {
   font-family: 'Crimson Text', serif;
 }
+/*---------------*/
 
-.homepage-img {
-  position: relative;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #ffffff;
+  height: 100%;
+}
+
+.homepage {
+  background-image: url("../img/background-img.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.homepage h2 {
+  position: absolute;
+  top: 450px;
+  left: 450px;
+  font-size: 42px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  width: 20em;
+  padding: 2px 15px;
 }
 
 header {
@@ -47,31 +69,32 @@ header {
 
 .company-logo {
   width: 10%;
+  padding: 15px;
+}
+
+.company-logo img {
+  justify-content: center;
 }
 
 .company-name {
-  width: 30%;
+  width: 37%;
+  padding-top: 13px;
 }
 
 nav {
   top: 0;
   text-transform: uppercase;
   display: flex;
-  width: 60%;
+  width: 65%;
+  padding-top: 13px;
 }
 
 .nav-link {
-  padding: 10px 20px;
-  width: 20%;
+  padding: 38px 30px 0 30px;
 }
 
 nav a {
   text-decoration: none;
-}
-
-nav li {
-  display: inline-block;
-  text-align: right;
 }
 
 nav a:link {
@@ -79,12 +102,11 @@ nav a:link {
 }
 
 nav a:visited {
-  color: #888
+  color: #e5e5e5;
 }
 
 nav a:hover {
-/*  color: #720C1C;*/
-  color: #910F23;
+  color: #D1102D;
 }
 
 nav a:active {
@@ -96,8 +118,17 @@ nav a:active {
   justify-content: space-around;
 }
 
+.about-container h3 {
+  font-size: 30px;
+}
+
 .about-wrap {
   width: 45%;
+  padding: 20px;
+}
+
+.about-wrap img {
+  margin: 45px 50px 30px 85px;
 }
 
 #statistics {
@@ -120,17 +151,31 @@ section li {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding-top: 20px;
 }
 
 .service-wrap {
   width: 38%;
   text-align: center;
+  padding-bottom: 20px;
 }
 
-#values {
-  padding: 20px;
+.projects-container h3 {
   text-align: center;
-  
+  font-size: 30px;
+}
+
+.values-container {
+  padding-top: 20px;
+  text-align: center;
+  height: 100%;
+  background-color: #e5e5e5;
+}
+
+.values-wrap {
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 footer {
@@ -146,6 +191,35 @@ footer {
   text-align: center;
 }
 
-footer li {
+footer ul {
+  margin-top: 5em;
+  margin-bottom: 5em;
+  padding: 0;
+  list-style-type: none;
+}
+
+footer a {
   text-decoration: none;
+}
+
+footer a:link {
+  color: #ffffff;
+}
+
+footer a:visited {
+  color: #888
+}
+
+footer a:hover {
+  color: #910F23;
+}
+
+footer a:active {
+  color: #D7D2C3;
+}
+
+#copyright {
+  margin-top: 22em;
+  color: grey;
+  font-size: 10px;
 }

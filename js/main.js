@@ -1,18 +1,14 @@
 // Make it rain!
 
-/* --- h1 ---
-animate "Company Name" to "CN" 2s after user landed on the page
-*/
-
-/* --- .header-nav-wrap ---
-the bar is sticky as user is scrolling down the page 
+/* --- header ---
+the bar is sticky as user is scrolling down the page; 
   when #about is at top 0, 
-    then hide the bar,
+    hide the bar;
   then show the bar everytime user scrolls up,
 */
 
 /* --- #statistics ---
-when #statistics is on screen, the number starts counting up from zero until the end number 
+when #statistics is on screen, the number starts counting up from zero until specified number 
 */
 var distanceToTop;
 var distanceScrolled;
@@ -39,7 +35,10 @@ $(window).on('scroll', function () {
     }
 })
 
-
-/* --- #values ---
-
-*/
+/* --- smooth scrolling links ---*/
+jQuery(document).ready(function($) {
+    $(".scroll").click(function(event){     
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000, 'swing');
+    });
+});
